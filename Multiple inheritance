@@ -1,0 +1,37 @@
+
+#include <iostream>
+using namespace std;
+class sum
+{
+    public:
+    void add(int x,int y)
+    {
+        cout<<"The sum is: "<<x+y<<endl;
+    }
+};
+class diff:public sum
+{
+    public:
+    void sub(int x,int y)
+    {
+        cout<<"The diff is:"<<x-y<<endl;
+    }
+};
+class mul:public sum
+{
+    public:
+    void pro(int x,int y)
+    {
+        cout<<"The product is:"<<x*y<<endl;
+    }
+};
+int main()
+{
+    diff d;
+    mul m;
+    d.add(2,2);
+    d.sub(2,3);
+    m.add(5,5);
+    m.pro(6,5);
+    return 0;
+}
