@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+class sum
+{
+    public:
+    void add(int x,int y)
+    {
+        cout<<"The sum is: "<<x+y<<endl;
+    }
+};
+class diff:public sum
+{
+    public:
+    void sub(int x,int y)
+    {
+        cout<<"The diff is:"<<x-y<<endl;
+    }
+};
+int main()
+{
+    diff d;
+    d.add(2,2);
+    d.sub(2,3);
+    return 0;
+}
