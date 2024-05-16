@@ -1,0 +1,30 @@
+ #include<iostream>
+ using namespace std;
+ class marks
+ {
+  private:
+  int Tamil;
+  int English;
+  int maths;
+  public:
+  marks(int x,int y,int z)
+  {
+      this->Tamil=x;
+      this->English=y;
+      this->maths=z;
+  }
+
+  
+  void display()
+  {
+  cout<<" Tamil mark: "<<Tamil<<endl;
+  cout<<" English mark: "<<English<<endl;
+  cout<<" Maths mark: "<<maths<<endl;
+  }
+ };
+ int main()
+ {
+     marks m(2,3,4);
+     m.display();
+     return 0;
+ }
