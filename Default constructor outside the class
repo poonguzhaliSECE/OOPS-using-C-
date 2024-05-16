@@ -1,0 +1,32 @@
+#include <iostream>
+#include<string>
+using namespace std;
+class book
+{
+    private:
+    int number;
+    int price;
+    public:
+       book();
+       void display();
+    
+};
+book::book()
+{
+        cout<<"Enter the number"<<endl;
+        cin>>number;
+        cout<<"ENter the price"<<endl;
+        cin>>price;
+    }
+    void book:: display()
+    {
+        cout<<"book no is:"<<number<<endl;
+        cout<<"book price is:"<<price;
+    }
+
+int main() {
+    book b;
+    b.display();
+    return 0;
+    }
+    
