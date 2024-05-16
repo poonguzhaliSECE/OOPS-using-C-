@@ -1,0 +1,29 @@
+ #include<iostream>
+ using namespace std;
+ class sub{
+     int tamil;
+     int eng;
+     public:
+     sub(int x,int y)
+     {
+        tamil=x;
+         eng=y;
+     }
+     sub(sub & obj)
+     {
+         tamil=obj.tamil;
+         eng=obj.eng;
+     }
+     void display()
+     {
+         cout<<"Tamil: "<<tamil<<endl;
+         cout<<"English:"<<eng<<endl;
+     }
+ };
+ int main()
+ {
+     sub s(2,3);
+     s.display();
+     sub s1(s);
+     s1.display();
+ }
